@@ -7,24 +7,24 @@ Problemer med dette design:
 
 Lav cohesion:
 
-Klassen AllInOne har for mange ansvarsomrÃ¥der
-(LED-kontrol, potentiometer-lÃ¦sning, og knaphÃ¥ndtering),
-hvilket gÃ¸r den svÃ¦r at forstÃ¥ og vedligeholde.
+Klassen AllInOne har for mange ansvarsområder
+(LED-kontrol, potentiometer-læsning, og knaphåndtering),
+hvilket gør den svær at forstå og vedligeholde.
 
-HÃ¸j coupling:
+Høj coupling:
 
-Alle komponenter er tÃ¦t forbundet inden for samme klasse,
-hvilket gÃ¸r det svÃ¦rt at Ã¦ndre eller teste individuelle dele af systemet.
+Alle komponenter er tæt forbundet inden for samme klasse,
+hvilket gør det svært at ændre eller teste individuelle dele af systemet.
 
-Ã˜velse:
+Øvelse:
 
 koden skal omstruktureres (re-formateres).
-Det meste af koden fra eksemplet kan genbruges for at lÃ¸se Ã¸velsen, men det skal flyttes rundt.
+Det meste af koden fra eksemplet kan genbruges for at løse øvelsen, men det skal flyttes rundt.
 
-1. prÃ¸v at skabe hÃ¸j cohesion ved at oprette en ny klasse til hvert ansvarsomrÃ¥de
+1. prøv at skabe høj cohesion ved at oprette en ny klasse til hvert ansvarsområde
     - Navngiv hver klasse fornuftigt efter PEP8: https://www.python.org/dev/peps/pep-0008
     - Hver klasse skal have sin egen constructor (__init__) og instantiere de objekter der
-        krÃ¦ves for at den kan fungere.
+        kræves for at den kan fungere.
     - Lav nu et objekt for hver af klasserne, til potmeter, neopixel-ring og et til hver trykknap.
     - Behold hver klassse i samme fil og test at koden virker
     - Gem dette program i en mappe kalde "better_cohesion" og navngiv filen "better_cohesion_example.py"
@@ -33,7 +33,7 @@ Det meste af koden fra eksemplet kan genbruges for at lÃ¸se Ã¸velsen, men det sk
 """
 
 ###########################################################################
-# Nye klasser indsÃ¦ttes her
+# Nye klasser indsættes her
 
 class Potmeter:
     def __init__(self, pot_pin):

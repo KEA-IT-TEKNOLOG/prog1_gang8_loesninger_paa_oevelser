@@ -8,30 +8,30 @@ Problemer med dette design:
 
 Lav cohesion:
 
-Klassen AllInOne har for mange ansvarsomrÃ¥der
-(LED-kontrol, potentiometer-lÃ¦sning, og knaphÃ¥ndtering),
-hvilket gÃ¸r den svÃ¦r at forstÃ¥ og vedligeholde.
+Klassen AllInOne har for mange ansvarsområder
+(LED-kontrol, potentiometer-læsning, og knaphåndtering),
+hvilket gør den svær at forstå og vedligeholde.
 
-HÃ¸j coupling:
+Høj coupling:
 
-Alle komponenter er tÃ¦t forbundet inden for samme klasse,
-hvilket gÃ¸r det svÃ¦rt at Ã¦ndre eller teste individuelle dele af systemet.
+Alle komponenter er tæt forbundet inden for samme klasse,
+hvilket gør det svært at ændre eller teste individuelle dele af systemet.
 
-Ã˜velse:
+Øvelse:
 
 koden skal omstruktureres (re-formateres).
-Det meste af koden fra eksemplet kan genbruges for at lÃ¸se Ã¸velsen, men det skal flyttes rundt.
+Det meste af koden fra eksemplet kan genbruges for at løse øvelsen, men det skal flyttes rundt.
 
 kopier kodeeksemplet ind i en ny mappe kaldet "best_cohesion_and_coupling_example"
 
-2. prÃ¸v derefter at skabe low coupling ved at lave et nyt modul til hver klasse (trykknap, neopixel-ring, potmeter)
+2. prøv derefter at skabe low coupling ved at lave et nyt modul til hver klasse (trykknap, neopixel-ring, potmeter)
     - Gem hver klasse med korrekt navngivning i et modul for sig
-    - SÃ¸rg for at de nÃ¸dvendige klasser importeres i hvert modul
+    - Sørg for at de nødvendige klasser importeres i hvert modul
     - Opret derefter en main fil og importer hver modul derinde og lav et objekt fra hver klasse
         (et til potmeter, og et til neopixel-ring og et til hver trykknap)
-    - sÃ¸rg for at main filen starter main() funktionen og test at koden fungerer
+    - sørg for at main filen starter main() funktionen og test at koden fungerer
     - gem main filen i mappen "best_cohesion_and_coupling_example", og navngiv den "main_file.py"
-    - lav en lib mappe inde i denne mappe og indsÃ¦t de klasserne til neopixel-ringen, potmeteret og tryknapperne deri
+    - lav en lib mappe inde i denne mappe og indsæt de klasserne til neopixel-ringen, potmeteret og tryknapperne deri
 
 """
 
